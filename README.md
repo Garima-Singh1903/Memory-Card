@@ -1,5 +1,5 @@
 # Memory Card Game
-A basic memory game in which the trick is to remember which cards are where.
+As a personal project, I worked on this memory card game project in which the trick is to remember which cards are where ,to practise my HTML5 and CSS3 abilities. I also cooperated with @baibavsingh07 who provided help in JavaScript, to make the game dynamic and useful.
 
 # Use of Project
 A user-friendly game to enhance user's memory.
