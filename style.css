@@ -10,14 +10,7 @@ body {
   display: flex;
   position: relative;
 }
-h3 {
-  width: 400px;
-  padding-top: 10px;
-  padding-bottom: 100;
-  position: absolute;
-  left: 32%;
-  text-align: center;
-}
+
 .container {
   width: 550px;
   height: 500px;
