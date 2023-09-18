@@ -3,7 +3,7 @@ var firstCard, secondCard;
 var lock = false;
 var isFlipped = false;
 const labelTimer = document.querySelector(".labelTimer");
-
+console.log("Project");
 cards.forEach(card => 
     card.addEventListener("click", flip));
 
