@@ -1,55 +1,96 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    height: 100vh;
-    background-color:rgb(138,191,195);
-    display: flex;
+body {
+  height: 95vh;
+  width: 95vw;
+  background-color: rgb(138, 191, 195);
+  display: flex;
+  position: relative;
 }
-h3{
-    width: 500px;
-    padding-top: 10px;
-    padding-bottom: 100;
-    position: absolute;
-    left:32%;
-    text-align: center;
+h3 {
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 100;
+  position: absolute;
+  left: 32%;
+  text-align: center;
 }
-.container{
-    width: 500px;
-    height: 500px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    perspective: 1000px;
+.container {
+  width: 550px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  /* display: none; */
 }
-.card{
-    width: 23%;
-    height: 23%;
-    margin: 5px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.3s;
-    cursor: pointer;
+.card {
+  width: 23%;
+  height: 23%;
+  margin: 5px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+  cursor: pointer;
 }
-.card:active{
-    transform: scale(0.95);
-    transition: transform 0.2s ease-in-out;
+.card:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease-in-out;
 }
-.card.flip{
-    transform: rotateY(180deg);
-    cursor: pointer;
+.card.flip {
+  transform: rotateY(180deg);
+  cursor: pointer;
 }
-.frontSide, .backSide{
-    background-color:bisque;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    position: absolute;
-    backface-visibility: hidden;
+.frontSide,
+.backSide {
+  background-color: bisque;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  backface-visibility: hidden;
 }
-.frontSide{
-    transform: rotateY(180deg);
+.frontSide {
+  transform: rotateY(180deg);
+}
+
+.contbtn {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 97%;
+  /* background-color: aqua; */
+}
+
+.btn {
+  position: relative;
+  top: 45%;
+  left: 45%;
+  /* background-color: blueviolet; */
+
+  transition-duration: 0.7s;
+  /* display: none; */
+  padding-right: 10px;
+}
+
+.btn:hover {
+  background-color: #af4c4c; /* Green */
+  color: white;
+}
+
+.labelTimer {
+  font-size: x-large;
+  left: 97%;
+  top: 2%;
+  background-color: #784caf;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid;
+
+  position: relative;
 }
